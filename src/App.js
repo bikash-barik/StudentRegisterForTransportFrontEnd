@@ -10,11 +10,18 @@ import Login from "./components/Login";
 import Register from "./components/Register";
 import Home from "./components/Home";
 import Profile from "./components/Profile";
-import StudentRegistration from './components/Body/StudentRegistration'
-import ListStudentComponent from './components/Body/ListStudentComponent'
-import CreateStudentComponent from './components/Body/CreateStudentComponent'
-import Registration from './components/Body/register'
-import ViewStudentComponent from './components/Body/ViewStudentComponent'
+import StudentRegistration from "./components/Body/StudentRegistration";
+import ListStudentComponent from "./components/Body/ListStudentComponent";
+import CreateStudentComponent from "./components/Body/CreateStudentComponent";
+import Registration from "./components/Body/register";
+import ViewStudentComponent from "./components/Body/ViewStudentComponent";
+
+//custom for payment
+import TicketBooking from "../src/components/Body/components/TicketBooking";
+import PaymentMethod from "../src/components/Body/components/PaymentMethod";
+import PaytmPG from "../src/components/Body/components/PaytmPG";
+import SBIBankPG from "../src/components/Body/components/SBIBankPG";
+import ThankYouMessage from "../src/components/Body/components/ThankYouMessage";
 
 import { logout } from "./actions/auth";
 import { clearMessage } from "./actions/message";
@@ -125,8 +132,11 @@ const App = () => {
               component={ViewStudentComponent}
             ></Route>
             <Route path="/registration" component={Registration}></Route>
-
-            
+            <Route path="/booking" exact component={TicketBooking} />
+            <Route path="/payment" exact component={PaymentMethod} />
+            <Route path="/submitPaymentDetail" exact component={PaytmPG} />
+            <Route path="/thankyou" exact component={ThankYouMessage} />
+            <Route path="/sbipg" exact component={SBIBankPG} />
           </Switch>
         </div>
 
