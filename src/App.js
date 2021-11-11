@@ -17,6 +17,8 @@ import CreateStudentComponent from "./components/Body/CreateStudentComponent";
 import Registration from "./components/Body/register";
 import ViewStudentComponent from "./components/Body/ViewStudentComponent";
 import BusDetailsList from "./components/Body/BusDetails";
+import BusUpdate from "./components/Body/BusUpdate";
+import BusAdd from "./components/Body/AddBus";
 
 
 //custom for payment
@@ -72,7 +74,7 @@ const App = () => {
   return (
     <Router history={history}>
       <div>
-       <Header/>
+        <Header />
         <div className="container mt-3">
           <Switch>
             <Route exact path={["/", "/home"]} component={Home} />
@@ -100,6 +102,8 @@ const App = () => {
             <Route path="/thankyou" exact component={ThankYouMessage} />
             <Route path="/sbipg" exact component={SBIBankPG} />
             <Route path="/busdetails" exact component={BusDetailsList} />
+            <Route path="/update-bus/:id" component={BusUpdate}></Route>
+            <Route path="/add-bus" component={BusAdd}></Route>
           </Switch>
         </div>
 

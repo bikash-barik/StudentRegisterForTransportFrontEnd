@@ -21,7 +21,7 @@ export default class ListRoute extends Component {
         });
     }
     editRoute(id) {
-        this.props.history.push(`/update-route/${id}`);
+        this.props.history.push(`/update-bus/${id}`);
     }
     componentDidMount() {
         Service.getRoute().then((res) => {
@@ -29,8 +29,10 @@ export default class ListRoute extends Component {
         });
     }
     addRoute() {
-        this.props.history.push("/AddRoute");
+        this.props.history.push("/add-bus");
     }
+
+
 
     render() {
         return (

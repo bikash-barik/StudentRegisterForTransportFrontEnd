@@ -32,7 +32,7 @@ class ListStudentComponent extends Component {
     }
 
     addStudent(){
-        this.props.history.push('/add-student/_add');
+        this.props.history.push('/add_student/_add');
     }
 
     render() {
