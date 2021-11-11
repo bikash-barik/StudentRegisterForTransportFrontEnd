@@ -16,6 +16,8 @@ import ListStudentComponent from "./components/Body/ListStudentComponent";
 import CreateStudentComponent from "./components/Body/CreateStudentComponent";
 import Registration from "./components/Body/register";
 import ViewStudentComponent from "./components/Body/ViewStudentComponent";
+import BusDetailsList from "./components/Body/BusDetails";
+
 
 //custom for payment
 import TicketBooking from "../src/components/Body/components/TicketBooking";
@@ -97,6 +99,7 @@ const App = () => {
             <Route path="/submitPaymentDetail" exact component={PaytmPG} />
             <Route path="/thankyou" exact component={ThankYouMessage} />
             <Route path="/sbipg" exact component={SBIBankPG} />
+            <Route path="/busdetails" exact component={BusDetailsList} />
           </Switch>
         </div>
 
