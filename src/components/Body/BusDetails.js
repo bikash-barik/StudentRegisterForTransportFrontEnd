@@ -51,7 +51,7 @@ export default class ListRoute extends Component {
                 <div className=" container shadow-lg mt-5 table-data bg-light" >
 
                     <h2 className="text-center"> ROUTES</h2>
-                    <button type="button" style={{ marginLeft: "980px" }} className="btn btn-primary mb-3" onClick={this.addRoute}>ADD ROUTE</button>
+                    <button type="button" style={{ marginLeft: "90px" }} className="btn btn-primary mb-3" onClick={this.addRoute}>ADD ROUTE</button>
                     <div className="row">
 
 

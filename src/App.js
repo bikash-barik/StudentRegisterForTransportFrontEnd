@@ -17,9 +17,12 @@ import CreateStudentComponent from "./components/Body/CreateStudentComponent";
 import Registration from "./components/Body/register";
 import ViewStudentComponent from "./components/Body/ViewStudentComponent";
 import BusDetailsList from "./components/Body/BusDetails";
+import BusListPage from './components/Body/BusDetail'
 import BusUpdate from "./components/Body/BusUpdate";
 import BusAdd from "./components/Body/AddBus";
-
+import ListStudent from "./components/Body/ListStudent";
+import DashboardPage from "./components/Pages/DashboardPage";
+import BusDetailPage from "./components/Pages/BusDetailsPage";
 
 //custom for payment
 import TicketBooking from "../src/components/Body/components/TicketBooking";
@@ -86,7 +89,9 @@ const App = () => {
               exact
               component={StudentRegistration}
             ></Route>
-            <Route path="/Students" component={ListStudentComponent}></Route>
+            <Route path="/Students" component={DashboardPage}></Route>
+            <Route path="/ListStudent" component={ListStudent}></Route>
+            <Route path="/ListStudentComponent" component={ListStudentComponent}></Route>
             <Route
               path="/add_student/:id"
               component={CreateStudentComponent}
@@ -101,7 +106,9 @@ const App = () => {
             <Route path="/submitPaymentDetail" exact component={PaytmPG} />
             <Route path="/thankyou" exact component={ThankYouMessage} />
             <Route path="/sbipg" exact component={SBIBankPG} />
-            <Route path="/busdetails" exact component={BusDetailsList} />
+            <Route path="/busdetails" exact component={BusDetailPage} />
+            <Route path="/BusDetailsList" exact component={BusDetailsList} />
+            <Route path="/BusListPage" exact component={BusListPage} />
             <Route path="/update-bus/:id" component={BusUpdate}></Route>
             <Route path="/add-bus" component={BusAdd}></Route>
           </Switch>

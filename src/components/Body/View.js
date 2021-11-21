@@ -39,7 +39,7 @@ class ViewStudentComponent extends Component {
           <Row>
             <Col sm="3">
               <Button block color="success" onClick={this.addStudent}>
-              <a className="text-white" href="/students"> <img src="https://img.icons8.com/metro/19/ffffff/back.png"/>Back</a>
+              <a className="btn btn-primary" href="/students"> <img src="https://img.icons8.com/metro/19/ffffff/back.png"/>Back</a>
               </Button>
             </Col>
           </Row>
