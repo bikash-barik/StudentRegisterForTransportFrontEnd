@@ -84,12 +84,17 @@ export const Header = () => {
                 {currentUser.username}
               </Link>
             </li>
-
+            <li className="nav-item">
+              <Link to={"/register"} className="nav-link">
+                Contact us
+              </Link>
+            </li>
             <li className="nav-item">
               <a href="/login" className="nav-link" onClick={logOut}>
                 LogOut
               </a>
             </li>
+          
           </div>
         ) : (
           <div className="navbar-nav ml-auto">
@@ -102,6 +107,11 @@ export const Header = () => {
             <li className="nav-item">
               <Link to={"/register"} className="nav-link">
                 Sign Up
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to={"/register"} className="nav-link">
+                Contact us
               </Link>
             </li>
           </div>

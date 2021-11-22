@@ -23,7 +23,7 @@ import BusAdd from "./components/Body/AddBus";
 import ListStudent from "./components/Body/ListStudent";
 import DashboardPage from "./components/Pages/DashboardPage";
 import BusDetailPage from "./components/Pages/BusDetailsPage";
-
+import HelpDesk from "./components/Body/HelpDesk";
 //custom for payment
 import TicketBooking from "../src/components/Body/components/TicketBooking";
 import PaymentMethod from "../src/components/Body/components/PaymentMethod";
@@ -111,6 +111,7 @@ const App = () => {
             <Route path="/BusListPage" exact component={BusListPage} />
             <Route path="/update-bus/:id" component={BusUpdate}></Route>
             <Route path="/add-bus" component={BusAdd}></Route>
+            <Route path="/help_desk" component={HelpDesk}></Route>
           </Switch>
         </div>
 

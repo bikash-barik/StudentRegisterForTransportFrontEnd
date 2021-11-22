@@ -105,7 +105,7 @@ class ListStudent extends Component {
             </Col>
           </Row>
         </div>
-        {/* <Container className="mt-4">
+        <Container className="mt-4">
           <Row>
             <Col sm="3">
               <Button block color="success" onClick={this.addStudent}>
@@ -113,7 +113,7 @@ class ListStudent extends Component {
               </Button>
             </Col>
           </Row>
-        </Container> */}
+        </Container>
         <Container className="mt-5">
           {/* {this.state.students.map((student) => this.renderStudent(student))} */}
         </Container>
